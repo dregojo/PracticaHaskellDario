@@ -73,28 +73,3 @@ eleccionIrregular = any mesaIrregular.mesas
 mesaIrregular mesa = ((> cantidadVotantesHabilitados mesa).length.votos) mesa
 mesaConMenorIndiceDeAusentismo eleccion = maximoSegun presentismo (mesas eleccion)
 presentismo mesa = min (length (votos mesa)/cantidadVotantesHabilitados mesa) 1
-
-mesa1 = UnaMesa{
-        distrito = "paternal",
-        votos = ["lla","lla","pro","fp","lla","fit","un","fit"],
-        cantidadVotantesHabilitados = 10
-}
-mesa2 = UnaMesa{
-        distrito = "paternal",
-        votos = ["un","pro"],
-        cantidadVotantesHabilitados = 2
-}
-mesa3 = UnaMesa{
-        distrito = "almagro",
-        votos = ["fit","fp","fit"],
-        cantidadVotantesHabilitados = 1
-}
-eleccion1 = UnaEleccion{
-        mesas = [mesa1,mesa2,mesa3],
-        partidos = ["fp","fit","pro","un","lla"]
-}
-eleccion2 = UnaEleccion{
-        mesas = [mesa1,mesa2],
-        partidos = ["fp","fit","pro","un","lla"]
-}
--}
